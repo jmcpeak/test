@@ -479,6 +479,11 @@
     if (r)
         window.location.href = r;
     
+    if (typeof(CollectGarbage) == "function") {
+        console.log('Collect Garbage');
+        CollectGarbage();
+    }
+    
 </script>
 
 </body>
